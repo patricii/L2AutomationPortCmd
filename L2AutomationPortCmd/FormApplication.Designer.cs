@@ -347,10 +347,10 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Label labelBaudRate;
         private System.Windows.Forms.Label labelDataBits;
         private System.Windows.Forms.Label labelStopBits;
-        private System.Windows.Forms.ComboBox comboBoxPorts;
-        private System.Windows.Forms.ComboBox comboBoxBoundRate;
-        private System.Windows.Forms.ComboBox comboBoxDataBits;
-        private System.Windows.Forms.ComboBox comboBoxStopBits;
+        public System.Windows.Forms.ComboBox comboBoxPorts;
+        public System.Windows.Forms.ComboBox comboBoxBoundRate;
+        public System.Windows.Forms.ComboBox comboBoxDataBits;
+        public System.Windows.Forms.ComboBox comboBoxStopBits;
         private System.Windows.Forms.Button buttonOpenDrawer;
         private System.Windows.Forms.Button buttonCloseDrawer;
         private System.Windows.Forms.Button buttonUpClip;
@@ -359,7 +359,7 @@ namespace L2ARAutomationSerialPort
         private System.Windows.Forms.Button buttonUSBOut;
         private System.Windows.Forms.Button buttonP3In;
         private System.Windows.Forms.Button buttonP3Out;
-        private System.Windows.Forms.TextBox textBoxResult;
+        public System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonAudio;
         private System.Windows.Forms.Button buttonRadio;

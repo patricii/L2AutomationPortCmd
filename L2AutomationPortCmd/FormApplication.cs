@@ -1,4 +1,5 @@
-﻿using System;
+﻿using L2AutomationPortCmd;
+using System;
 using System.Drawing;
 using System.IO.Ports;
 using System.Windows.Forms;
@@ -7,112 +8,86 @@ namespace L2ARAutomationSerialPort
 {
     public partial class FormSerialPortAutomation : Form
     {
-        SerialPort serialPort;
+        private static FormSerialPortAutomation INSTANCE = null;
+        SerialPortCmd sPC;
+
         public FormSerialPortAutomation()
         {
             InitializeComponent();
+            INSTANCE = this;
+            initializeSpc();
         }
-        private void sendSerialComand(string serialCmd)
+        private void initializeSpc()
         {
-            textBoxResult.Text += "-> Write" + Environment.NewLine;
-            try
-            {
-                textBoxResult.Text += serialCmd + Environment.NewLine;
-                Application.DoEvents();
-                serialPort = new SerialPort(comboBoxPorts.Text);
-                serialPort.BaudRate = int.Parse(comboBoxBoundRate.Text);
-                serialPort.DataBits = int.Parse(comboBoxDataBits.Text);
-                serialPort.DtrEnable = false;
-                serialPort.RtsEnable = false;
-                serialPort.ReadTimeout = 10000;
-                serialPort.WriteTimeout = 10000;
-                serialPort.Parity = Parity.None;
+            sPC = new SerialPortCmd();
+        }
+        public static FormSerialPortAutomation getInstance()
+        {
+            if (INSTANCE == null)
+                INSTANCE = new FormSerialPortAutomation();
 
-                if (comboBoxStopBits.Text == "One")
-                    serialPort.StopBits = StopBits.One;
-                if (comboBoxStopBits.Text == "Two")
-                    serialPort.StopBits = StopBits.Two;
-
-                serialPort.Open();
-                serialPort.Write(serialCmd);
-
-
-                if (serialPort.IsOpen)
-                    serialPort.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error : " + ex);
-            }
+            return INSTANCE;
         }
         private void buttonOpenDrawer_Click(object sender, EventArgs e)
         {
-            sendSerialComand("OPEN");
+            sPC.sendSerialComand("OPEN");
             buttonOpenDrawer.BackColor = Color.Green;
             buttonCloseDrawer.BackColor = Color.Red;
         }
-
         private void buttonCloseDrawer_Click(object sender, EventArgs e)
         {
-            sendSerialComand("CLOSE");
+            sPC.sendSerialComand("CLOSE");
             buttonCloseDrawer.BackColor = Color.Green;
             buttonOpenDrawer.BackColor = Color.Red;
         }
-
         private void buttonUpClip_Click(object sender, EventArgs e)
         {
-            sendSerialComand("SIXON");
+            sPC.sendSerialComand("SIXON");
             buttonUpClip.BackColor = Color.Green;
             buttonDownClip.BackColor = Color.Red;
         }
-
         private void buttonDownClip_Click(object sender, EventArgs e)
         {
-            sendSerialComand("SIXOFF");
+            sPC.sendSerialComand("SIXOFF");
             buttonDownClip.BackColor = Color.Green;
             buttonUpClip.BackColor = Color.Red;
         }
-
         private void buttonUSBIn_Click(object sender, EventArgs e)
         {
-            sendSerialComand("FOURON");
+            sPC.sendSerialComand("FOURON");
             buttonUSBIn.BackColor = Color.Green;
             buttonUSBOut.BackColor = Color.Red;
         }
-
         private void buttonUSBOut_Click(object sender, EventArgs e)
         {
-            sendSerialComand("FOUROFF");
+            sPC.sendSerialComand("FOUROFF");
             buttonUSBOut.BackColor = Color.Green;
             buttonUSBIn.BackColor = Color.Red;
-
         }
-
         private void buttonP3In_Click(object sender, EventArgs e)
         {
-            sendSerialComand("FIVEON");
+            sPC.sendSerialComand("FIVEON");
             buttonP3In.BackColor = Color.Green;
             buttonP3Out.BackColor = Color.Red;
         }
 
         private void buttonP3Out_Click(object sender, EventArgs e)
         {
-            sendSerialComand("FIVEOFF");
+            sPC.sendSerialComand("FIVEOFF");
             buttonP3Out.BackColor = Color.Green;
             buttonP3In.BackColor = Color.Red;
         }
 
         private void buttonAudio_Click(object sender, EventArgs e)
         {
-            sendSerialComand("AUDIO");
+            sPC.sendSerialComand("AUDIO");
             buttonAudio.BackColor = Color.Green;
             buttonRadio.BackColor = Color.Red;
         }
 
         private void buttonRadio_Click(object sender, EventArgs e)
         {
-            sendSerialComand("RADIO");
+            sPC.sendSerialComand("RADIO");
             buttonRadio.BackColor = Color.Green;
             buttonAudio.BackColor = Color.Red;
         }
@@ -123,10 +98,9 @@ namespace L2ARAutomationSerialPort
 
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            sendSerialComand(textBoxSend.Text);
+            sPC.sendSerialComand(textBoxSend.Text);
             textBoxSend.Text = "";
         }
-
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             string[] ports = SerialPort.GetPortNames();
@@ -136,7 +110,7 @@ namespace L2ARAutomationSerialPort
         {
             if (e.KeyCode == Keys.Enter)
             {
-                sendSerialComand(textBoxSend.Text);
+                sPC.sendSerialComand(textBoxSend.Text);
             }
         }
     }

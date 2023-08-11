@@ -7,4 +7,3 @@ C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2Auto
 C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.csproj.CoreCompileInputs.cache
 C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.exe
 C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.pdb
-C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.csprojAssemblyReference.cache
