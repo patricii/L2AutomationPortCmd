@@ -1,0 +1,10 @@
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\bin\Debug\L2AutomationPortCmd.exe.config
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\bin\Debug\L2AutomationPortCmd.exe
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\bin\Debug\L2AutomationPortCmd.pdb
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2ARAutomationSerialPort.FormSerialPortAutomation.resources
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.Properties.Resources.resources
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.csproj.GenerateResource.cache
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.csproj.CoreCompileInputs.cache
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.exe
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.pdb
+C:\DEVELOPMENT PROJECTS\L2AutomationPortCmd\L2AutomationPortCmd\obj\Debug\L2AutomationPortCmd.csprojAssemblyReference.cache
