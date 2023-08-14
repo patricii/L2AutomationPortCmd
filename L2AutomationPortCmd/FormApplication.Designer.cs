@@ -99,7 +99,7 @@ namespace L2ARAutomationSerialPort
             // 
             this.comboBoxPorts.FormattingEnabled = true;
             this.comboBoxPorts.Location = new System.Drawing.Point(112, 26);
-            this.comboBoxPorts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxPorts.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxPorts.Name = "comboBoxPorts";
             this.comboBoxPorts.Size = new System.Drawing.Size(82, 21);
             this.comboBoxPorts.TabIndex = 6;
@@ -111,7 +111,7 @@ namespace L2ARAutomationSerialPort
             "9600",
             "115200"});
             this.comboBoxBoundRate.Location = new System.Drawing.Point(112, 58);
-            this.comboBoxBoundRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxBoundRate.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxBoundRate.Name = "comboBoxBoundRate";
             this.comboBoxBoundRate.Size = new System.Drawing.Size(82, 21);
             this.comboBoxBoundRate.TabIndex = 7;
@@ -121,7 +121,7 @@ namespace L2ARAutomationSerialPort
             // 
             this.comboBoxDataBits.FormattingEnabled = true;
             this.comboBoxDataBits.Location = new System.Drawing.Point(112, 97);
-            this.comboBoxDataBits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxDataBits.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxDataBits.Name = "comboBoxDataBits";
             this.comboBoxDataBits.Size = new System.Drawing.Size(82, 21);
             this.comboBoxDataBits.TabIndex = 8;
@@ -134,7 +134,7 @@ namespace L2ARAutomationSerialPort
             "One",
             "Two"});
             this.comboBoxStopBits.Location = new System.Drawing.Point(112, 133);
-            this.comboBoxStopBits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxStopBits.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxStopBits.Name = "comboBoxStopBits";
             this.comboBoxStopBits.Size = new System.Drawing.Size(82, 21);
             this.comboBoxStopBits.TabIndex = 9;
@@ -143,7 +143,7 @@ namespace L2ARAutomationSerialPort
             // buttonOpenDrawer
             // 
             this.buttonOpenDrawer.Location = new System.Drawing.Point(283, 21);
-            this.buttonOpenDrawer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonOpenDrawer.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOpenDrawer.Name = "buttonOpenDrawer";
             this.buttonOpenDrawer.Size = new System.Drawing.Size(71, 33);
             this.buttonOpenDrawer.TabIndex = 12;
@@ -154,7 +154,7 @@ namespace L2ARAutomationSerialPort
             // buttonCloseDrawer
             // 
             this.buttonCloseDrawer.Location = new System.Drawing.Point(377, 21);
-            this.buttonCloseDrawer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCloseDrawer.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCloseDrawer.Name = "buttonCloseDrawer";
             this.buttonCloseDrawer.Size = new System.Drawing.Size(70, 33);
             this.buttonCloseDrawer.TabIndex = 13;
@@ -165,7 +165,7 @@ namespace L2ARAutomationSerialPort
             // buttonUpClip
             // 
             this.buttonUpClip.Location = new System.Drawing.Point(283, 58);
-            this.buttonUpClip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUpClip.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUpClip.Name = "buttonUpClip";
             this.buttonUpClip.Size = new System.Drawing.Size(71, 32);
             this.buttonUpClip.TabIndex = 14;
@@ -176,7 +176,7 @@ namespace L2ARAutomationSerialPort
             // buttonDownClip
             // 
             this.buttonDownClip.Location = new System.Drawing.Point(377, 58);
-            this.buttonDownClip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDownClip.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDownClip.Name = "buttonDownClip";
             this.buttonDownClip.Size = new System.Drawing.Size(70, 32);
             this.buttonDownClip.TabIndex = 15;
@@ -187,7 +187,7 @@ namespace L2ARAutomationSerialPort
             // buttonUSBIn
             // 
             this.buttonUSBIn.Location = new System.Drawing.Point(283, 96);
-            this.buttonUSBIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUSBIn.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUSBIn.Name = "buttonUSBIn";
             this.buttonUSBIn.Size = new System.Drawing.Size(71, 31);
             this.buttonUSBIn.TabIndex = 16;
@@ -198,7 +198,7 @@ namespace L2ARAutomationSerialPort
             // buttonUSBOut
             // 
             this.buttonUSBOut.Location = new System.Drawing.Point(377, 97);
-            this.buttonUSBOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUSBOut.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUSBOut.Name = "buttonUSBOut";
             this.buttonUSBOut.Size = new System.Drawing.Size(70, 34);
             this.buttonUSBOut.TabIndex = 17;
@@ -209,7 +209,7 @@ namespace L2ARAutomationSerialPort
             // buttonP3In
             // 
             this.buttonP3In.Location = new System.Drawing.Point(283, 135);
-            this.buttonP3In.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonP3In.Margin = new System.Windows.Forms.Padding(2);
             this.buttonP3In.Name = "buttonP3In";
             this.buttonP3In.Size = new System.Drawing.Size(71, 34);
             this.buttonP3In.TabIndex = 18;
@@ -220,7 +220,7 @@ namespace L2ARAutomationSerialPort
             // buttonP3Out
             // 
             this.buttonP3Out.Location = new System.Drawing.Point(377, 135);
-            this.buttonP3Out.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonP3Out.Margin = new System.Windows.Forms.Padding(2);
             this.buttonP3Out.Name = "buttonP3Out";
             this.buttonP3Out.Size = new System.Drawing.Size(70, 34);
             this.buttonP3Out.TabIndex = 19;
@@ -231,7 +231,7 @@ namespace L2ARAutomationSerialPort
             // textBoxResult
             // 
             this.textBoxResult.Location = new System.Drawing.Point(8, 207);
-            this.textBoxResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxResult.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxResult.Multiline = true;
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -241,7 +241,7 @@ namespace L2ARAutomationSerialPort
             // buttonClear
             // 
             this.buttonClear.Location = new System.Drawing.Point(557, 183);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(65, 20);
             this.buttonClear.TabIndex = 23;
@@ -252,7 +252,7 @@ namespace L2ARAutomationSerialPort
             // buttonAudio
             // 
             this.buttonAudio.Location = new System.Drawing.Point(464, 21);
-            this.buttonAudio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAudio.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAudio.Name = "buttonAudio";
             this.buttonAudio.Size = new System.Drawing.Size(70, 33);
             this.buttonAudio.TabIndex = 25;
@@ -263,7 +263,7 @@ namespace L2ARAutomationSerialPort
             // buttonRadio
             // 
             this.buttonRadio.Location = new System.Drawing.Point(552, 22);
-            this.buttonRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRadio.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRadio.Name = "buttonRadio";
             this.buttonRadio.Size = new System.Drawing.Size(69, 31);
             this.buttonRadio.TabIndex = 26;
@@ -274,7 +274,7 @@ namespace L2ARAutomationSerialPort
             // buttonSend
             // 
             this.buttonSend.Location = new System.Drawing.Point(8, 169);
-            this.buttonSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSend.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(71, 34);
             this.buttonSend.TabIndex = 27;
@@ -285,7 +285,7 @@ namespace L2ARAutomationSerialPort
             // textBoxSend
             // 
             this.textBoxSend.Location = new System.Drawing.Point(83, 186);
-            this.textBoxSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSend.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSend.Name = "textBoxSend";
             this.textBoxSend.Size = new System.Drawing.Size(452, 20);
             this.textBoxSend.TabIndex = 28;
@@ -293,7 +293,7 @@ namespace L2ARAutomationSerialPort
             // buttonSearch
             // 
             this.buttonSearch.Location = new System.Drawing.Point(203, 22);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(50, 26);
             this.buttonSearch.TabIndex = 29;
@@ -303,6 +303,7 @@ namespace L2ARAutomationSerialPort
             // 
             // FormSerialPortAutomation
             // 
+            this.AcceptButton = this.buttonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 402);
@@ -332,7 +333,7 @@ namespace L2ARAutomationSerialPort
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSerialPortAutomation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "L2AR Port Automation";

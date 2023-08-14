@@ -106,12 +106,5 @@ namespace L2ARAutomationSerialPort
             string[] ports = SerialPort.GetPortNames();
             comboBoxPorts.Items.AddRange(ports);
         }    
-        private void textBoxSend_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                sPC.sendSerialComand(textBoxSend.Text);
-            }
-        }
     }
 }
